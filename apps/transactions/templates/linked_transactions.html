@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Linked transactions for {{ transaction_value }}</title>
+</head>
+<body>
+<h1>Linked transactions for {{ transaction_value }}:</h1>
+
+{% for transaction in linked_transactions %}
+    <strong>Transaction:</strong> {{ transaction.key }} : {{ transaction.value }}
+{% endfor %}
+
+</body>
+</html>

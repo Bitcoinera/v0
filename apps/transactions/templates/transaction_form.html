@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transactions View</title>
+</head>
+<body>
+
+<form method="post" novalidate>
+  {% csrf_token %}
+  {{ form }}
+  <button type="submit">Show linked transactions</button>
+</form>
+
+<form action={% url "transactions:submit-transactions-to-ethereum" %}>
+    <input type="submit" value="Submit transaction to Etheruem (This could take a while)" />
+</form>
+</body>
+</html>
