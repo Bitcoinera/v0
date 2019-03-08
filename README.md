@@ -14,6 +14,11 @@ run <br>
 `source ~/.bashrc`<br>
 `mkvirtualenv --python=/usr/bin/python3.6 d_tail`<br>
 `cd v0`<br>
-``
+`pip install -r requirements.txt`<br>
+now everything should be set up and you cun run your local dev server: <br>
+`python manage.py runserver`<br>
+you can find the application at: `http://localhost:8000`<br>
+anytime when you come back to the project run the command: `workon d_tail` (this will activate the virtual python environment) before running the runserver command
+
 
 
