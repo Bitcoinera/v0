@@ -15,6 +15,8 @@ run <br>
 `mkvirtualenv --python=/usr/bin/python3.6 d_tail`<br>
 `cd v0`<br>
 `pip install -r requirements.txt`<br>
+In case you experience any errors related to the cytoolz, like 'pip install cytoolz failed with error code 1', try doing<br>
+`sudo apt-get install python3.6-dev`<br>
 now everything should be set up and you cun run your local dev server: <br>
 `python manage.py runserver`<br>
 you can find the application at: `http://localhost:8000`<br>
